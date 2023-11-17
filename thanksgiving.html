@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+
+
+	<style type="text/css">
+
+
+h1{
+			
+			font-family: 'Quicksand', sans-serif;
+			font-size:30px;
+			color:brown;
+			background-color:sandybrown;
+		}
+
+div{
+		width:300px;
+		height:300px;
+		margin:10;
+		opacity:0;
+		display:inline-block;
+		background-position:center;
+		position:relative;
+	}
+	#one{
+		background-image:url(dadocean.JPG);
+		background-size:contain;
+		background-repeat:no-repeat;
+
+	}
+
+	#two{
+		background-image:url(bigtreemom.png);
+		background-size:contain;
+		background-repeat:no-repeat;
+	}
+	#three{
+		background-image:url(familypic.jpg);
+		background-size:contain;
+		background-repeat:no-repeat;
+	}
+	#four{
+		background-image:url(cutepizza.JPG);
+		background-size:contain;
+		background-repeat:no-repeat;
+	}
+	#five{
+		background-image:url(foody.jpg);
+		background-size:contain;
+		background-repeat:no-repeat;
+	}
+	#six{
+		background-image:url(housegreat.png);
+		background-size:contain;
+		background-repeat:no-repeat;
+
+	}
+	.text{
+		position:relative;
+		top:-10%;
+		color:black;
+
+	}
+
+	body{
+		background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIiFaYkXcHaocUGhKlXXxoDvU9EiZT0yPhJF8SvniVRIJtA3rKOjqY7f6vmFRX77Sm3n0&usqp=CAU);
+		background-size:contain;
+		margin:0px;
+	}
+	
+</style>
+</head>
+<body>
+	<h1> Happy Thanksgiving! I am grateful for...
+</h1>
+
+
+<!-- <div id="thanksgiving"> -->
+<div id="one"></div>
+<div id="two"></div>
+<div id="three"></div>
+<div id="four"></div>
+<div id="five"></div>
+<div id="six"></div>
+<!-- </div> -->
+
+
+
+<script type="text/javascript">
+
+var clickCounter = 0;
+
+document.addEventListener("click", function(){
+	clickCounter = clickCounter +1
+
+	console.log(clickCounter)
+
+	if(clickCounter == 1){
+		one.style.opacity = "1"
+	}
+
+	if(clickCounter == 2){
+	two.style.opacity = "1"
+	one.style.opacity = "0"
+	}
+
+	if(clickCounter == 3){
+		three.style.opacity = "1"
+		two.style.opacity = "0"
+	}
+	if(clickCounter ==4){
+		four.style.opacity = "1"
+		three.style.opacity = "0"
+	}
+	if(clickCounter == 5){
+		five.style.opacity = "1"
+		four.style.opacity = "0"
+		
+	}
+	if(clickCounter == 6){
+		six.style.opacity = "1"
+		five.style.opacity = "0"
+		clickCounter = 0
+	}
+})
+
+
+</script>
+</body>
+</html>
