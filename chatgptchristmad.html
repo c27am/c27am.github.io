@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flying Christmas Image</title>
+  <style>
+    /* Define initial position of the image */
+    #christmas-tree {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: auto;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body onclick="moveImage(event)">
+  <img id="christmas-tree" src="christmas_tree.png" alt="Christmas Tree">
+  
+  <script>
+    // Function to move the image to a random position
+    function moveImage(event) {
+      const image = document.getElementById('christmas-tree');
+      const maxX = window.innerWidth - image.width;
+      const maxY = window.innerHeight - image.height;
+
+      // Calculate random positions
+      const randomX = Math.floor(Math.random() * maxX);
+      const randomY = Math.floor(Math.random() * maxY);
+
+      // Apply new positions
+      image.style.left = randomX + 'px';
+      image.style.top = randomY + 'px';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+	.ball {
+		width:100px;
+		height:100px;
+		background-image:url(phone.jpg);
+		background-size:contain;
+		background-image:no-repeat;
+		display:inline-block;
+
+
+	}	
+	</style>
+
+
+</head>
+<body>
+	<center><h1>Number of hours spent on my phone per day on average </h1>
+		<p> (one phone = one hour) </p>
+
+
+<script type="text/javascript">
+	function dribble (input){
+		//this makes a variable that points to a div. the function "createElements" puts angle brackets around whatever you five it. an element is just something in html that is in the body//
+		var ball=document.createElement("div")
+		document.body.appendChild(ball)
+		ball.classList.add("ball")
+		ball.innerText = input
+
+	}
+	for (var counter = 1; counter<5; counter=counter+1){
+		dribble(counter)
+}
+</script>
+
+
+
+</body>
+</html>

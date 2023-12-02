@@ -91,7 +91,10 @@ bug.play()
 
 })
 
-
+document.addEventListener("mousemove", function(event){
+		cat.style.left = event.clientX-50 + "px";
+		cat.style.top = event.clientY-50 + "px";
+		console.log(event.clientX, event.clientY)
 </script>
 
 </body>
