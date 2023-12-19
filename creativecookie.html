@@ -30,8 +30,8 @@ position:absolute;
 
 }
 .topping{
-	height:125px;
-	width:125px;
+	height:150px;
+	width:150px;
 	display:inline-block;
 	background-size:contain;
 	background-repeat:no-repeat;
@@ -42,11 +42,12 @@ position:absolute;
 }
 #whiteicing 
 {
-	background-image:url(whiteicing.png);
+	background-image:url(whiteicing.jpg);
 }
 #sprinkles {
-	background-image:url(sprinkles.png);
+	background-image:url(sprinkles8.png);
 }
+
 #pinkcandy{
 background-image:url(pinkcandy.png);
 }
@@ -69,7 +70,7 @@ background-image:url(bluecandy.png);
 
 
 #chocolatechip{
-	background-image:url(chip2.jpg);
+	background-image:url(chip4.png);
 }
 	</style>
 
@@ -99,11 +100,11 @@ background-image:url(bluecandy.png);
 			console.log(pinkicing)
 		})
 		whiteicing.addEventListener("click",function(){
-			topping = "whiteicing.png"
+			topping = "whiteicing.jpg"
 			console.log(whiteicing)
 		})
 		sprinkles.addEventListener("click",function(){
-			toppings = "sprinkle.png"
+			toppings = "sprinkles8.png"
 			console.log(sprinkles)
 		})
 		redcandy.addEventListener("click",function(){
@@ -137,18 +138,17 @@ background-image:url(bluecandy.png);
 
 		})
 		chocolatechip.addEventListener("click",function(){
-			topping = "chip2.jpg"
+			topping = "chip4.png"
 			console.log(chocolatechip)
 
 		})
-cookie.addEventListener("click", function makeTopping (event){
+cookie.addEventListener("click", function maketopping (event){
 	var whatever = document.createElement("div");
 	whatever.classList.add("topping");
-	document.body.appendChild(whatever);
+	documet.body.appendChild(whatever);
 	
 	// whatever.innerText = topping
 	whatever.style.backgroundImage = "url("+ topping +")"
-
 	whatever.style.left = event.clientX + "px"
 	whatever.style.top = event.clientY + "px"
 	whatever.style.position = "absolute"
