@@ -14,60 +14,69 @@
 		}
 
  	#sunset {
- 		width:375px;
- 		height:395px;
- 		background-image:url(ski3.JPG);
+ 		width:175px;
+ 		height:195px;
+ 		background-image:url(sunny.png);
  		background-size:contain;
  		background-repeat:no-repeat;
-			display:inline-block;
+/*			display:inline-block;*/
 			background-position:center;
-		
-		/*	top:20%;
-			left:15%;*/
+			position:absolute;
+		top:5%;
+			left:10%;*/
 
 
  	}
 
  	#nyc {
- 		width:450px;
- 		height:400px;
- 		background-image:url(ski1.JPG);
+ 		width:300px;
+ 		height:300px;
+ 		background-image:url(boat.png);
  		background-size:contain;
  		background-repeat:no-repeat;
- 		display:inline-block;
+/* 		display:inline-block;*/
  		background-position:center;
-/*/* 		position:absolute;*/
-		
-		/*	top:20%;
-			left:45%;*/*/
+position:absolute;
+		top:35%;
+		left:35%;
 
  		 	}
  	#ski {
- 		width:500px;
- 		height:400px;
- 		background-image:url(ski4.JPG);
+ 		width:600px;
+ 		height:700px;
+ 		background-image:url(palmtree.png);
  		background-size:contain;
  		background-repeat:no-repeat;
 			display:inline-block;
 			background-position:center;
-		
-			/*top:20%;
-			left:55%;*/
+			position:absolute;
+		top:25%;
+			left:70%;*/
 
 
 		}
+		body{
+			margin:0px;
+		}
 
-	 body{background-image:url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fee%2Fimages%2Fcartoon-illustration-of-the-wooden-pier-with-seagull-at-sunset-time%2F115882101&psig=AOvVaw08RXBXWviJrDEaEaHGl1bm&ust=1703366880677000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiUy6H-o4MDFQAAAAAdAAAAABBV);
-	
-		
+	 #background{
+	 	position:absolute;
+	 	top:0%;
+	 	width:100%;
+	 	height:1000px;
+	 	background-image:url(beach6.jpg);
+	 	background-size:cover;
+	background-repeat: no-repeat;
+				background-position:center;
 
 		}
 
-		h{
+		h1{
 		font-family: 'Frank Ruhl Libre', 
 		serif;
+		color:pink;
 		
-			font-size:25px;
+			font-size:45px;
 
 
 		}
@@ -75,6 +84,7 @@
 			font-family: 'Frank Ruhl Libre',
 			 serif;
 			font-size:25px;
+			color:white;
 
 			/*top:72%;
 			left:23%;*/
@@ -85,79 +95,51 @@
 
  </style>
 
-
 <body>
 
+<div id="background">
 <center><h1>
 
-  Welcome to Alexa's website!    
-
-</h1></center>
+  Welcome to Alexa's website! </h1> 
+<p>Click on the sun or palm tree to access my projects or journal </p>
+<p>Click on the boat to listen to music!</p>
+</center>
 
 <center>
 
-	<table>
-		<tr>
-
-
-<td>
+	
 	<a href="projects.html">
 	<div id="sunset"></div>
 		</a>
 
-</td>
-
-<td>
 	
 
-<a href="aboutme.html">
-
 	<div id ="nyc"></div>
-	</a>
+	<audio id="beach" src="beachy.mp3"></audio>
+
+
+<script type="text/javascript">
+document.addEventListener("click", function(){
+beach.play()
 		
+		</script>
 
-</td>
-
-<td>
 
 <a href="journal.html">
 	<div id="ski"></div>
 </a>
 
-</td>
-
-</tr>
 
 
-
-<tr>
-
-	<td>
-
-<p>
-	PROJECTS
-
-</p>
-</td>
-
-<td>	
-<p>
-ABOUT ME
-</p>
 </td>
 
 
-<td>
 
-	<p>
-	JOURNAL
-</p>
-</td>
-
-</tr>
 </table>
 
 </center>
+
+</div>
 
 </body>
 </html>
