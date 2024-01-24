@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	<title></title>
+	<style>
+		h1{
+			font-size:30px;
+			background-color:white;
+			font-family: 'Quicksand', sans-serif;
+}
+		#cookie {
+	background-repeat:no repeat;
+	width:500px;
+	height:500px;
+	background-image:url(cookie.jpg);
+	background-size:contain;
+position:absolute;
+	top:30%;
+	left:30%;
+
+}
+.topping{
+	height:100px;
+	width:100px;
+	display:inline-block;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+#pinkicing 
+{
+	background-image:url(icing3.jpg);
+}
+#whiteicing 
+{
+	background-image:url(whiteicing.png);
+}
+#sprinkles {
+	background-image:url(sprinkles.png);
+}
+#pinkcandy{
+background-image:url(pinkcandy.png);
+}
+
+#redcandy{
+	background-image:url(redcandy.png);
+}
+#orangecandy{
+	background-image:url(orangecandy.png);
+}
+#yellowcandy{
+background-image:url(yellowcandy.png);
+}
+#greencandy{
+background-image:url(greencandy.png);
+}
+#bluecandy{
+background-image:url(bluecandy.png);
+}
+
+
+#chocolatechip{
+	background-image:url(chip2.jpg);
+}
+	</style>
+
+</head>
+
+<body>
+	<h1> Use the toppings to decorate a cookie!
+	</h1>
+
+	<div id="pinkicing" class="topping"></div>
+	<div id="whiteicing" class="topping"></div>
+	<div id="sprinkles" class="topping"></div>
+	<div id="pinkcandy" class="topping"></div>
+	<div id="redcandy" class="topping"></div>
+	<div id="orangecandy" class="topping"></div>
+	<div id="yellowcandy" class="topping"></div>
+	<div id="greencandy" class="topping"></div>
+	<div id="bluecandy" class="topping"></div>
+	<div id="chocolatechip" class="topping"></div>
+	<div id=cookie></div>
+
+	<script type="text/javascript">
+		var topping;
+
+		pinkicing.addEventListener("click",function(){
+			topping = "icing3.jpg"
+			console.log(pinkicing)
+		})
+		whiteicing.addEventListener("click",function(){
+			topping = "whiteicing.png"
+			console.log(whiteicing)
+		})
+		sprinkles.addEventListener("click",function(){
+			toppings = "sprinkle.png"
+			console.log(sprinkles)
+		})
+		redcandy.addEventListener("click",function(){
+			topping = "redcandy.png"
+			console.log(redcandy)
+
+		})
+		orangecandy.addEventListener("click",function(){
+			topping = "orangecandy.png"
+			console.log(orangecandy)
+
+		})
+		yellowcandy.addEventListener("click",function(){
+			topping = "yellowcandy.png"
+			console.log(yellowcandy)
+
+		})
+		greencandy.addEventListener("click",function(){
+			topping = "greencandy.png"
+			console.log(greencandy)
+
+		})
+		bluecandy.addEventListener("click",function(){
+			topping = "bluecandy.png"
+			console.log(bluecandy)
+
+		})
+		pinkcandy.addEventListener("click",function(){
+			topping = "pinkcandy.png"
+			console.log(pinkcandy)
+
+		})
+		chocolatechip.addEventListener("click",function(){
+			topping = "chip2.jpg"
+			console.log(chocolatechip)
+
+		})
+cookie.addEventListener("click", function makeTopping (event){
+	var whatever = document.createElement("div");
+	whatever.classList.add("topping");
+	document.body.appendChild(whatever);
+
+	// whatever.innerText = topping
+	whatever.style.backgroundImage = "url("+ topping +")"
+
+	whatever.style.left = event.clientX + "px"
+	whatever.style.top = event.clientY + "px"
+	whatever.style.position = "absolute"
+})
+
+</script>
+
+
+</body>
+</html>
