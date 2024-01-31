@@ -49,8 +49,11 @@
 		#text{
 		width:300px;
 			height:300px;
-			background-color:lightblue;
+			background-image:url(card.png);
 			position:absolute;
+			background-size:contain;
+			background-repeat: no-repeat;
+
 			left:5%;
 			top:15%;
 
@@ -64,29 +67,36 @@
 			background-size:contain;
 			position:absolute;
 			background-repeat: no-repeat;
-			top:45%;
+			top:38%;
 			left:5%;
 		}
 
 	</style>
 </head>
 <body>
-<center><h1>Happy Birthday Mom!!</h1></center>
+<center><h1>🥳🎉	Happy Birthday Mom!!	🎉🥳</h1></center>
 <center><div id = "happy"></div></center>
 <div id ="tiger"></div>
 <div id ="text"></div>
 <div id ="flower"></div>
 
+
 <div id="tree"></div>
+<audio  id="beach" src="happyyy.mp3"></audio>
+
 
 <script type="text/javascript">
 
-	var dice = ["url(mom1.png)", "url(mom2.jpg)", "url(mom3.jpg)", "url(momitaly.jpg)", "url(sunnymom.jpg)", "url(smilemom.jpg)", "url(mom4.jpg)","url(mom5.jpg)", "url(treemom.jpg)", "url(family.jpg)",];
+	var dice = ["url(mom1.png)", "url(mom2.jpg)", "url(mom3.jpg)", "url(momitaly.jpg)", "url(sunnymom.jpg)", "url(smilemom.jpg)", "url(mom4.jpg)","url(mom5.jpg)", "url(treemom.jpg)", "url(family.jpg)", "url(mom10.jpg)", "url(mom11.jpg)","url(mom12.jpg)", "url(mom13.png"];
 	document.addEventListener("click", function(){
-	var x = Math.round(Math.random()*9);
+	var x = Math.round(Math.random()*13);
 		//console.log(x)
 	console.log(dice[x])
-	happy.style.backgroundImage = dice[x]})
+	happy.style.backgroundImage = dice[x]
+		beach.play()
+
+		})
+
 
 
 
