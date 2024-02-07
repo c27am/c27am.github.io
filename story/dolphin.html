@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+		#car{
+			width:100px;
+			height:100px;
+			background-image:url(dog.png);
+			background-size:contain;
+			position: absolute;
+			background-repeat: no-repeat;
+			/*left: 100px;
+			top: 100px;*/
+		}
+		#food{
+			width:100px;
+			height:100px;
+			background-image:url(icecream10.png);
+			background-size:contain;
+			position: absolute;
+			background-repeat: no-repeat;
+			left: 700px;
+			top: 500px;
+		}
+		body{
+		background-image:url(https://t4.ftcdn.net/jpg/02/70/75/71/360_F_270757122_vEr3npFlTXaQTeU9cSx9TIpdZQmQ6WGr.jpg);
+		background-size:contain;
+		background-repeat:no-repeat;
+	
+		width:750px;
+		height:750px;
+
+	}
+	</style>
+
+
+
+
+
+</head>
+<body>
+
+
+<div id="car"></div>
+<div id="food"></div>
+<h2>
+	Use your arrow keys to bring the dog to his icecream! 
+</h2>
+
+<script type="text/javascript">
+
+var x = 0
+var y = 0
+	document.addEventListener("keydown",
+		function(whatever){
+			console.log(event.key)
+
+			if (event.key=="ArrowRight"){
+			
+				x=x+30
+
+			car.style.left = x + "px"
+			}
+
+			if(event.key=="ArrowLeft"){
+				x=x-30
+				car.style.left = x + "px"
+			}
+			if(event.key=="ArrowDown"){
+				y=y+30
+				car.style.top = y + "px"
+
+			}
+			if(event.key=="ArrowUp"){
+				y=y-30
+				car.style.top = y + "px"
+	
+			}
+		})
+</script>
+
+
+</head>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+
+<style>
+
+	body{
+			background-color:pink;
+			color:aliceblue;
+	 	}
+
+	p{
+			font-family: 'Frank Ruhl Libre',
+			 serif;
+			font-size:35px;
+			color:black;
+
+		}
+
+.candy{
+width:100px;
+height:100px;
+display:inline-block;
+background-size:contain;
+background-position: center;
+background-repeat:no-repeat;
+
+}
+#basket{
+width:350px;
+height:350px;
+background-size:contain;
+background-image:url(basket1.png);
+background-repeat:no-repeat;
+background-position:center;
+
+}
+#candyheart{
+background-image:url(candyheart.png);
+}
+
+#lollipop{
+background-image:url(lollipop.png);
+}
+#candybox{
+	background-image:url(candybox.png);
+}
+
+
+</style>
+</head>
+
+<body>
+
+	<p> Happy Valentines Day! Fill up Amandas candy bag from your classes valentines day exchange :) </p>
+
+<div id="candyheart" class="candy"></div>
+<div id="lollipop" class="candy"></div>
+<div id="candybox" class="candy"></div>
+<div id="basket"></div>
+
+<script type="text/javascript">
+var candy;
+
+function makeTopping (){
+var whatever = document.createElement("div");
+basket.body.appendChild(whatever);
+whatever.classList.add("candy");
+whatever.innerText = candy
+
+
+}
+
+candyheart.addEventListener("click", function(){
+candy = "candyheart"
+console.log(candy)
+})
+
+lollipop.addEventListener("click", function(){
+candy = "lollipop"
+console.log(candy)
+})
+candybox.addEventListener("click", function(){
+candy = "candybox"
+console.log(candy)
+})
+
+
+
+
+basket.addEventListener("click",
+function makeDiv (event) {
+var basketcandy = document.createElement('div');
+document.body.appendChild(basketcandy)
+basketcandy.classList.add('candy')
+basketcandy.style.position = "absolute"
+basketcandy.style.left = event.clientX +"px"
+basketcandy.style.top = event.clientY +"px"
+basketcandy.style.border = "0px"
+basketcandy.style.backgroundImage = "url("+ candy +".png)"
+
+})
+
+</script>
+
+</body>
+
+</htm
