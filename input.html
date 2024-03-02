@@ -5,10 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 </head>
+<style> 
+	body{
+		background-color:skyblue;
+	}
+	h{
+		
+			font-size:35px;
+			color:hotpink;
+	}
+	</style>
 <body>
 
 
-Guess a number 1-100
+<h><b>Guess a number 1-100</b></h>
 <input id="word"></input>  
 <br> 
 <button id=submit>submit</button>
@@ -18,13 +28,18 @@ Guess a number 1-100
 	{
 		console.log(word.value) 
 
-		if(word.value=="13")
+		if(word.value=="18")
 
-			{alert("you guessd it!")}
+			alert("you guessed it!")
 
-		else{
-			alert(input.value + "  is incorrect. the number is 13")
-		}
+		if(word.value<="18")
+			
+			alert("Too low. Guess again!")
+
+
+		if(word.value>="18")
+			alert("Too high. Guess again!")
+		
 
 	})
 
