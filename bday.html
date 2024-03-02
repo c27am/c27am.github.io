@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+		<script type="text/javascript"> 
+document.addEventListener("click", function makeHeart (event){
+			var heart = document.createElement("div");
+			document.body.appendChild(heart);
+			heart.style.width="70px";
+			heart.style.height="70px";
+			heart.style.backgroundSize="contain";
+			heart.style.backgroundImage="url(heart.png)";
+			heart.style.display="inline-block";
+			heart.style.margin="20px"
+			heart.style.zIndex="10"
+			heart.style.backgroundRepeat = "no-repeat"
+			heart.style.position = "absolute"
+			heart.style.left = event.clientX + "px"
+			heart.style.top = event.clientY + "px"
+</script>
+
+<div style="width: 70px; height: 70px; background-size: contain; background-image: url(&quot;heart.png&quot;); display: inline-block; margin: 20px; z-index: 10; background-repeat: no-repeat; position: absolute; left: 790px; top: 212px;">
+})
+
+
+</body>
+</html>
