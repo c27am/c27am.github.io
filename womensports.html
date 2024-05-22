@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head> 
+<body>
+	<style type="text/css">
+	
+		p1{
+			font-family: 'Quicksand',
+			 sans-serif;
+			font-size:18px;
+			color:purple;
+		}
+		h1{
+			
+			font-family: 'Quicksand', sans-serif;
+			font-size:30px;
+			color:hotpink;
+			background-color:skyblue;
+	}
+		#container{
+			width:324px;
+			height:350px;
+			border:4px solid pink;
+				display:inline-block;
+				top:50px;
+		}
+		#container2{
+			width:324px;
+			height:350px;
+			border:4px solid pink;
+			display:inline-block;
+/*			position:absolute;*/
+			top:50px;
+			left:300px;
+		}
+
+		.women{
+			width:25px;
+			height:25px;
+			background-color:pink;
+			background-size:contain;
+			border-radius:50%;
+			display:inline-block;
+			background-position: center;
+			border:1px solid white;
+		}
+
+		.men{
+			width:25px;
+			height:25px;
+			background-size:contain;
+			background-color:lightskyblue;
+			border-radius:50%;
+			display:inline-block;
+			background-position: center;
+			border:1px solid white;
+		}
+
+		.WomenMedia{
+			width:25px;
+			height:25px;
+			background-size:contain;
+			background-color:pink;
+			border-radius:50%;
+			display:inline-block;
+			background-position: center;
+			border:1px solid white;
+		}
+		.MenMedia{
+			width:25px;
+			height:25px;
+			background-size:contain;
+			background-color:lightskyblue;
+			border-radius:50%;
+			display:inline-block;
+			background-position: center;
+			border:1px solid white;
+		}
+
+		/*#girl{
+			width:350px;
+			height:350px;
+			background-size:contain;
+			background-image:url(https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2024-05/240503-caitlyn-clark-Fever-Wings-Basketball-ac-1138p-343add.jpg);
+			display:inline-block;
+			background-repeat:no-repeat;
+		}
+		*/
+		body{
+			background-color:lightyellow;
+		}
+
+</style>
+</head>
+<body>
+	
+	 <center><h1> WOMEN IN SPORTS </h1>
+	 <p1>(pink: women   |   blue: men) </center>
+	
+
+		<div id="container"> 
+<p1>
+		WNBA players receive a maximum of 22.8 percent of the leagues revenue </p1>	<p></p>
+	</div>
+
+<div id="container2">
+
+		<p1> NBA players receive 49-51 percent of the leagues revenue </p1> 	<p></p>
+
+
+	</div>
+
+	<div id="girl"></div>
+
+	<script type="text/javascript">
+		
+		function makeSongsPlayed (){
+			var div = document.createElement("div")
+			container.appendChild(div)
+			div.classList.add('women')
+
+		}
+
+
+		for(var i=0; i<22; i=i+1){
+			makeSongsPlayed()
+		}
+
+
+		function otherSongs (){
+			var songsAgain = document.createElement("div")
+			container.appendChild(songsAgain)
+			songsAgain.classList.add('men')
+
+		}
+
+			for(var i=0; i<78; i=i+1){
+			otherSongs()
+		}
+
+function makeMediaShown (){
+			var div = document.createElement("div")
+			container2.appendChild(div)
+			div.classList.add('WomenMedia')
+		}
+
+
+		for(var i=0; i<50; i=i+1){
+			makeMediaShown()
+		}
+
+function makeotherMedia (){
+			var div = document.createElement("div")
+			container2.appendChild(div)
+			div.classList.add('MenMedia')
+		}
+		for(var i=0; i<50; i=i+1){
+			makeotherMedia()
+		}
+
+
+</script></center>
+</script>
+
+</body>
+</html>

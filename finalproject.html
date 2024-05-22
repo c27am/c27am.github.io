@@ -4,33 +4,90 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
 	<style type="text/css">
 		
-		.lines{
-			width:10px;
-			height:10px;
-			background-color:blue;
-			display:inline-block;
-			margin:2px;
+		p1{
+			font-family: 'Quicksand',sans-serif;
+			font-size:25px;
+			color:darkblue;
 		}
+		p2{
+			font-family: 'Quicksand',sans-serif;
+			font-size:25px;
+			color:orange;
+		}
+		h1{
+			
+			font-family: 'Quicksand', sans-serif;
+			font-size:30px;
+			color:orange;
+			background-color:darkblue;
+
+
+		}
+		#sports{
+		width:395px;
+ 		height:395px;
+ 		background-image:url(bball5.png);
+ 		background-size:contain;
+ 		background-repeat:no-repeat;
+			display:inline-block;
+		}
+	
+	#buisness{
+		width:395px;
+ 		height:395px;
+ 		background-image:url(buisness.png);
+ 		background-size:contain;
+ 		background-repeat:no-repeat;
+			display:inline-block;
+	}
+	#money{
+		width:395px;
+ 		height:395px;
+ 		background-image:url(money.png);
+ 		background-size:contain;
+ 		background-repeat:no-repeat;
+			display:inline-block;
+	}
+	body{
+			background-image:url(purple2.png);
+		}
+
 	</style>
 </head>
 <body>
 
-<script type="text/javascript">
-
-	function makeDiv(){
-		var line = document.createElement('div')
-		document.body.appendChild(line)
-		line.classList.add("lines")
-	}
-
-document.addEventListener("mousemove", makeDiv)
-
-
 
 </script>
+<h1><center> ALEXA'S FINAL PROJECT </center> </h1>
+
+<p1> <center>Click on the photos to see different visuals about gender pay gap. </center></p1>
+
+<center>
+<a href="./finalPresentation/index.html">
+	<p></p><p2> Here is the link to my final presentation	</p2><p></p>
+	</a>
+</center>
+<center>
+<a href="womensports.html">
+	<div id="sports"></div>
+</a>
+<a href="ceos1.html">
+	<div id="buisness"></div>
+</a>
+
+<a href="averages.html">
+	<div id="money"></div>
+</a>
+</center>
+
+
+
 
 
 </body>

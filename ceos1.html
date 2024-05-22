@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<style type="text/css">
+		
+		h1{
+			
+			font-family: 'Quicksand', sans-serif;
+			font-size:30px;
+			color:hotpink;
+			background-color:skyblue;
+		}
+		p2{
+			font-family: 'Quicksand', sans-serif;
+			font-size:25px;
+			color:purple;
+		}
+
+		body{
+			background-color:lightyellow;
+
+		}
+
+		/*.gender{
+			width:100px;
+			height:100px;
+			border:6px light blue;
+			display:inline-block;
+			background-size:cover;
+			background-image:contain;
+			background-image:no-repeat;
+
+
+	}
+	#girl{
+			
+			background-color:pink;
+		
+		}
+	#girl1{
+		background-color:pink ;
+	}
+	#girl2{
+		background-color:pink ;
+	}
+	#girl3{
+		background-color:pink ;
+	}
+
+	#boy{
+		background-color:blue;
+	}
+		#boy1{
+		background-color:blue;
+	}
+			
+		#boy2{
+		background-color:blue;
+	}
+		#boy3{
+		background-color:blue;
+	}
+	#boy4{
+		background-color:blue;
+	}
+	#boy5{
+		background-color:blue;
+	}*/
+
+		.box{
+			width:85px;
+			height:85px;
+			background-color:skyblue;
+			background-repeat:no-repeat;
+			background-size:contain;
+			display:inline-block;
+			margin:2px;
+
+		}
+			
+			
+		</style>
+	<!-- <div class="gender" id="girl"></div>
+		<div class="gender" id="girl1"></div>
+		<div class="gender" id="girl2"></div>
+		<div class="gender" id="girl3"></div>
+
+<div class="gender" id="boy"></div>
+<div class="gender" id="boy1"></div>
+<div class="gender" id="boy2"></div>
+<div class="gender" id="boy3"></div>
+<div class="gender" id="boy4"></div>
+<div class="gender" id="boy5"></div> -->
+	<center><h1> WOMEN IN BUISNESS </h1>
+	<p2>  Women only account for 5.4% of CEOs globally. Which means that for every 100 CEO's, only 5 are women. </p2> </center>
+	
+	<script type="text/javascript">
+
+
+function makedivs (placeholder){
+			var div = document.createElement("div")
+			document.body.appendChild(div)
+			div.classList.add('box')
+
+			if (placeholder < 5){
+				div.style.backgroundImage="url(smartgirl.png)";
+				div.style.backgroundColor="pink";
+				div.style.backgroundSize="contain"
+				div.style.backgroundPosition="center"
+				div.style.backgroundRepeat="no-repeat"
+							}
+
+		}
+
+
+		for(var i=0; i<100; i=i+1){
+			makedivs(i)
+		}
+
+</script>
+
+</body>
+</html>
